@@ -1,11 +1,11 @@
 package animals;
 
-public class Mammal extends AbstractAnimal
+public class Bird extends AbstractAnimal
 {
 	private String name;
 	private int yearDiscovered;
 
-	public Mammal(String name, int yearDiscovered)
+	public Bird(String name, int yearDiscovered)
 	{
 		super(id);
 		this.name = name;
@@ -16,7 +16,7 @@ public class Mammal extends AbstractAnimal
 	@Override
 	public String getMove();
 	{
-		return "walk"
+		return "fly"
 	}
 	@Override
 	public String getBreath();
@@ -27,6 +27,6 @@ public class Mammal extends AbstractAnimal
 	@Override
 	public String reproduce();
 	{
-		return "live births"
+		return "eggs"
 	}
 }
