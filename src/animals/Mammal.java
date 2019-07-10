@@ -12,5 +12,20 @@ public class Mammal extends AbstractAnimal
 		this.yearDiscovered = yearDiscovered;
 	}
 
+	@Override
+	public String getMove();
+	{
+		return "fly"
+	}
+	@Override
+	public String getBreath();
+	{
+		return "lungs"
+	}
 
+	@Override
+	public String reproduce();
+	{
+		return "live births"
+	}
 }
