@@ -27,6 +27,10 @@ public abstract class AbstractAnimal
 	public abstract String getMove();
 	public abstract String getBreath();
 	public abstract String reproduce();
+	public abstract String getName();
+	public abstract String getYear();
+
+
 
 	// Methods
 
