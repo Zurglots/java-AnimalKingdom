@@ -3,7 +3,7 @@ package animals;
 public abstract class AbstractAnimal
 {
 	// Fields
-	// Each animal to have, unique id, name, year discovered.
+	// Each animal has: unique id, name, year discovered.
 	public static int maxId = 0;
 	public int id;
 	public String name;

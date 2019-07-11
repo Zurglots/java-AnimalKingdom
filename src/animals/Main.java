@@ -123,7 +123,7 @@ public class Main
 		// || STRETCH ||
 		System.out.println("	_Animals Classified As Mammals, Alphabetized_");
 		animalList.sort((a1, a2) -> a1.name.compareToIgnoreCase(a2.name));
-		printAnimals(animalList, a -> a.id < 8); 
+		printAnimals(animalList, a -> a.id < 8); // I knew the ID's started with Mammals, I'm sure there is a cleaner way to do this though.
 		System.out.println();
 	}
 }

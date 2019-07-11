@@ -2,9 +2,6 @@ package animals;
 
 public class Fish extends AbstractAnimal
 {
-	// Passing fields through super. Redacting lines 6 & 7.
-	// private String name;
-	// private int yearDiscovered;
 
 	public Fish(String name, int yearDiscovered)
 	{
