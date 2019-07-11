@@ -2,15 +2,15 @@ package animals;
 
 public class Fish extends AbstractAnimal
 {
-	private String name;
-	private int yearDiscovered;
+	// private String name;
+	// private int yearDiscovered;
 
 
 	public Fish(String name, int yearDiscovered)
 	{
-		super(id);
-		this.name = name;
-		this.yearDiscovered = yearDiscovered;
+		super(id, name, yearDiscovered);
+		// this.name = name;
+		// this.yearDiscovered = yearDiscovered;
 	}
 
 	// Abstracted Methods Overrides
