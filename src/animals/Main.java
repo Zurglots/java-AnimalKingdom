@@ -72,34 +72,58 @@ public class Main
 
 		// List all the animals in descending order by year named
 		System.out.println();
-		System.out.println(" | List Start | ");
+		System.out.println("	 | List Start | ");
 		System.out.println();
-		System.out.println("_Year Named Descending_");
+		System.out.println("	_Year Named Descending_");
 
 		animalList.sort((a1, a2)-> a2.yearDiscovered - a1.yearDiscovered); // sort decending.
 		printAnimals(animalList, a -> a.id > 0); // prints all objects with maxId greater than 0.
 		System.out.println();
 
 		// List all the animals alphabetically
-		System.out.println("_Alphabetized by Animal Name_");
+		System.out.println("	_Alphabetized by Animal Name_");
 		animalList.sort((a1, a2) -> a1.name.compareToIgnoreCase(a2.name)); // compare value and sort ascending base 0.
 		printAnimals(animalList, a-> a.id > 0); // print all
 		System.out.println();
 
 		// List all the animals order by how they move
+		System.out.println("	_Animals That Walk_");
+		printAnimals(animalList, a -> a.getMove() == "walk");
+		System.out.println();
 
+		System.out.println("	_Animals That Swim_");
+		printAnimals(animalList, a -> a.getMove() == "swim");
+		System.out.println();
+
+		System.out.println("	_Animals That Fly_");
+		printAnimals(animalList, a -> a.getMove() == "fly");
+		System.out.println();
 
 		// List only those animals the breath with lungs
-
+		System.out.println("	_Animals That Breath With Lungs_ ");
+		printAnimals(animalList, a -> a.getBreath() == "lungs");
+		System.out.println();
 
 		// List only those animals that breath with lungs and were named in 1758
-
+		System.out.println("	_Animals That Breath With Lungs & Named in 1758_");
+		printAnimals(animalList, a -> (a.getBreath() == "lungs") && (a.yearDiscovered == 1758));
+		System.out.println();
 
 		// List only those animals that lay eggs and breath with lungs
+		System.out.println("	_Animals That Lay Eggs & Breath With Lungs_");
+		printAnimals(animalList, a -> (a.getBreath() == "lungs") && (a.reproduce() == "eggs"));
+		System.out.println();
 
+		// List alphabetically only those animals that were named in 1758 
+		System.out.println("	_Animals Named In 1758, Alphabetized_");
+		animalList.sort((a1, a2) -> a1.name.compareToIgnoreCase(a2.name)); // sort list to obtain correct order.
+		printAnimals(animalList, a -> a.yearDiscovered == 1758); // only display those from sorted list that match this criteria.
+		System.out.println();
 
-		// List alphabetically only those animals that were named in 1758
-
-
+		// || STRETCH ||
+		System.out.println("	_Animals Classified As Mammals, Alphabetized_");
+		animalList.sort((a1, a2) -> a1.name.compareToIgnoreCase(a2.name));
+		printAnimals(animalList, a -> a.id < 8); 
+		System.out.println();
 	}
 }
