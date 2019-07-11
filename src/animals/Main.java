@@ -40,6 +40,21 @@ public class Main
 		animalList.add(raccoon);
 		animalList.add(bigfoot);
 
+		// Construct Bird Data
+
+		Bird pigeon = new Bird("Pigeon", 1837);
+		Bird peacock = new Bird("Peacock", 1821);
+		Bird toucan = new Bird("Toucan", 1758);
+		Bird parrot = new Bird("Parrot", 1824);
+		Bird swan = new Bird("Swan", 1758);
+
+		// Add Bird Data to animalList
+
+		animalList.add(pigeon);
+		animalList.add(peacock);
+		animalList.add(toucan);
+		animalList.add(parrot);
+		animalList.add(swan);
 
 	}
 }
