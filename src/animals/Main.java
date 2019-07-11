@@ -56,5 +56,19 @@ public class Main
 		animalList.add(parrot);
 		animalList.add(swan);
 
+		// Construct Fish Data
+
+		Fish salmon = new Fish("Salmon", 1758);
+		Fish catfish = new Fish("Catfish", 1817);
+		Fish perch = new Fish("Perch", 1758);
+
+		// Add Fish Data to animalList
+
+		animalList.add(salmon);
+		animalList.add(catfish);
+		animalList.add(perch);
+
+	// Commence sorting!
+
 	}
 }
