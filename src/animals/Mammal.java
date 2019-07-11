@@ -10,19 +10,19 @@ public class Mammal extends AbstractAnimal
 
 	// Abstracted Methods Overrides
 	@Override
-	public String getMove();
+	public String getMove()
 	{
-		return "walk"
+		return "walk";
 	}
 	@Override
-	public String getBreath();
+	public String getBreath()
 	{
-		return "lungs"
+		return "lungs";
 	}
 
 	@Override
-	public String reproduce();
+	public String reproduce()
 	{
-		return "live births"
+		return "live births";
 	}
 }

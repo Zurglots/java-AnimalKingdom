@@ -13,19 +13,19 @@ public class Fish extends AbstractAnimal
 
 	// Abstracted Methods Overrides
 	@Override
-	public String getMove();
+	public String getMove()
 	{
-		return "swim"
+		return "swim";
 	}
 	@Override
-	public String getBreath();
+	public String getBreath()
 	{
-		return "gills"
+		return "gills";
 	}
 
 	@Override
-	public String reproduce();
+	public String reproduce()
 	{
-		return "eggs"
+		return "eggs";
 	}
 }

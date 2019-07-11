@@ -1,6 +1,6 @@
 package animals;
 
-import java.util*;
+import java.util.*;
 
 public class Main 
 {
@@ -11,7 +11,7 @@ public class Main
 			// for each instance of an animal in animals, if the expression sent via printAnimals is true, print the the following for said element. 
 		{
 			if (tester.test(a)) 
-			// test is underfined until we send it the filter request from printAnimals below.
+			// test is undefined until we send it the filter request from printAnimals below.
 			{
 				System.out.println("Name: " + a.name + " | " + "Travels by: " + a.getMove() + " | " + "Reproduces by: " + a.reproduce());
 			}
@@ -68,7 +68,32 @@ public class Main
 		animalList.add(catfish);
 		animalList.add(perch);
 
-	// Commence sorting!
+		// Commence sorting!
+
+		// List all the animals in descending order by year named
+		System.out.println(" | List Start | ");
+		System.out.println();
+		System.out.println("Year Named Descending");
+
+		printAnimals(animalList, animalList.sort((a1, a2)-> a2.yearDiscovered - a1.yearDiscovered));
+
+		// List all the animals alphabetically
+
+
+		// List all the animals order by how they move
+
+
+		// List only those animals the breath with lungs
+
+
+		// List only those animals that breath with lungs and were named in 1758
+
+
+		// List only those animals that lay eggs and breath with lungs
+
+
+		// List alphabetically only those animals that were named in 1758
+
 
 	}
 }
