@@ -71,15 +71,20 @@ public class Main
 		// Commence sorting!
 
 		// List all the animals in descending order by year named
+		System.out.println();
 		System.out.println(" | List Start | ");
 		System.out.println();
-		System.out.println("Year Named Descending");
+		System.out.println("_Year Named Descending_");
 
 		animalList.sort((a1, a2)-> a2.yearDiscovered - a1.yearDiscovered); // sort decending.
 		printAnimals(animalList, a -> a.id > 0); // prints all objects with maxId greater than 0.
+		System.out.println();
 
 		// List all the animals alphabetically
-
+		System.out.println("_Alphabetized by Animal Name_");
+		animalList.sort((a1, a2) -> a1.name.compareToIgnoreCase(a2.name)); // compare value and sort ascending base 0.
+		printAnimals(animalList, a-> a.id > 0); // print all
+		System.out.println();
 
 		// List all the animals order by how they move
 
