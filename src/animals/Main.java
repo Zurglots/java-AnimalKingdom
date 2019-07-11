@@ -75,7 +75,8 @@ public class Main
 		System.out.println();
 		System.out.println("Year Named Descending");
 
-		printAnimals(animalList, animalList.sort((a1, a2)-> a2.yearDiscovered - a1.yearDiscovered));
+		animalList.sort((a1, a2)-> a2.yearDiscovered - a1.yearDiscovered); // sort decending.
+		printAnimals(animalList, a -> a.id > 0); // prints all objects with maxId greater than 0.
 
 		// List all the animals alphabetically
 
